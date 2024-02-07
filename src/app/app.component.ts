@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import { Store } from '@ngrx/store';
+
+interface AppState {
+  contador: number;
+}
 
 @Component({
   selector: 'app-root',
@@ -9,8 +14,10 @@ export class AppComponent {
   
   contador: number;
   
-  constructor(){
+  constructor( private store: Store<AppState> ) {
+    
     this.contador = 10;
+    
   }
   
   incrementar(){

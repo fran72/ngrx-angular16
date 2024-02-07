@@ -18,7 +18,7 @@ export class NietoComponent implements OnInit {
   multiplicar() {
     this.contador *= 2;
     this.cambioContador.emit( this.contador );
-  }
+  }  
   
   dividir() {
     this.contador /= 2;
