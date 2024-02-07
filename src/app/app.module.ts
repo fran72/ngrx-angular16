@@ -18,7 +18,7 @@ import { NietoComponent } from './contador/nieto/nieto.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({ count: counterReducer })
+    StoreModule.forRoot({ contador: counterReducer })
   ],
   providers: [],
   bootstrap: [AppComponent]
